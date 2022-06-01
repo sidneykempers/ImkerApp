@@ -1,12 +1,10 @@
 .container {
-    max-width: 500px;
     margin: 50px auto;
     text-align: left;
     font-family: sans-serif;
 }
 form {
-    border: 1px solid #1A33FF;
-    background: #ecf5fc;
+    border: 1px black solid;
     padding: 40px 50px 45px;
 }
 .form-control:focus {
@@ -26,4 +24,10 @@ label {
 .form-control.error {
     border-color: red;
     padding: .375rem .75rem;
+}
+
+
+.table {
+    border: 1px black solid;
+    text-align: left;
 }
