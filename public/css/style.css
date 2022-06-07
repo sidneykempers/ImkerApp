@@ -3,6 +3,44 @@
     text-align: left;
     font-family: sans-serif;
 }
+
+
+#HomeBanner{
+    border: solid black 1px;
+    height: 200px;
+}
+#center {
+    text-align: center;
+}
+
+.main_menu{
+    padding-top: 15px;
+    text-align: center;
+    line-height: 32px;
+    border: solid black 0.5px;
+    background-color: #f3f4f7;
+    width: 100%;
+    height: 60px;
+
+}
+
+.main_menu li{
+    display: inline;
+    padding: 0 10px 0 10px;
+    font-size: 20px;
+}
+
+.main_menu a{
+    text-decoration: none;
+    color:  black;
+    padding: 8px;
+    font-variant: small-caps;
+}
+
+.main_menu a:hover{
+    color: orange;
+}
+
 form {
     border: 1px black solid;
     padding: 40px 50px 45px;
@@ -26,18 +64,8 @@ label {
     padding: .375rem .75rem;
 }
 
-<<<<<<< HEAD
-.HomeBanner{
-    position: absolute;
-    margin-left: 1000px;
-}
-
-header{
-    color: red;
-=======
 
 .table {
     border: 1px black solid;
     text-align: left;
->>>>>>> 3064f8b03e35a4cc44faa731dbed74cc4f53d957
 }
