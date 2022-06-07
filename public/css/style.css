@@ -27,3 +27,12 @@ label {
     border-color: red;
     padding: .375rem .75rem;
 }
+
+.HomeBanner{
+    position: absolute;
+    margin-left: 1000px;
+}
+
+header{
+    color: red;
+}
