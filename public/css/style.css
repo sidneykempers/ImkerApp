@@ -1,12 +1,10 @@
 .container {
-    max-width: 500px;
     margin: 50px auto;
     text-align: left;
     font-family: sans-serif;
 }
 form {
-    border: 1px solid #1A33FF;
-    background: #ecf5fc;
+    border: 1px black solid;
     padding: 40px 50px 45px;
 }
 .form-control:focus {
@@ -28,6 +26,7 @@ label {
     padding: .375rem .75rem;
 }
 
+<<<<<<< HEAD
 .HomeBanner{
     position: absolute;
     margin-left: 1000px;
@@ -35,4 +34,10 @@ label {
 
 header{
     color: red;
+=======
+
+.table {
+    border: 1px black solid;
+    text-align: left;
+>>>>>>> 3064f8b03e35a4cc44faa731dbed74cc4f53d957
 }
