@@ -1,3 +1,4 @@
+@yield('header')
 <!doctype html>
 <html>
 <head>
@@ -14,20 +15,14 @@
     <header>
         <nav>
             <ul class="main_menu">
-                <li><a href="#">Home</a></li>
+                <li><a href="/">Home</a></li>
                 <li><a href="#">Basiscursus</a></li>
                 <li><a href="#">Voortgezet Imkeren</a></li>
                 <li><a href="#">Informatie</a></li>
                 <li><a href="#">Links</a></li>
-                <li><a href="#">Contact</a></li>
+                <li><a href="/contact">Contact</a></li>
                 <li><a href="#">Berichten</a></li>
             </ul>
         </nav>
     </header>
-    <body>
-    <h1 class="text-3xl font-bold underline">
-    </h1>
-    </body>
-</div>
 
-</html>
