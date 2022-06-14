@@ -13,11 +13,15 @@ use App\Http\Controllers\ContactUsFormController;
 | contains the "web" middleware group. Now create something great!
 |
 */
-// homepage
+
 Route::get('/', function () {return view('app');});
 
-//contactpagina
+// contactpagina
 Route::get('/contact', [ContactUsFormController::class, 'createForm'])->name('contact');
 Route::post('/contact', [ContactUsFormController::class, 'ContactUsForm'])->name('contact.store');
 
+Route::get('/dashboard', function () {
+    return view('app');
+})->middleware(['auth'])->name('dashboard');
 
+require __DIR__.'/auth.php';
