@@ -21,7 +21,7 @@ Route::get('/contact', [ContactUsFormController::class, 'createForm'])->name('co
 Route::post('/contact', [ContactUsFormController::class, 'ContactUsForm'])->name('contact.store');
 
 Route::get('/dashboard', function () {
-    return view('app');
+    return view('dashboard');
 })->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
