@@ -40,7 +40,7 @@
                 {{Session::get('success')}}
             </div>
         @endif
-        <form action="" method="post" action="{{ route('contact') }}">
+        <form class="form" action="" method="post" action="{{ route('contact') }}">
             @csrf
             <div class="form-group">
                 <label>Naam</label>
