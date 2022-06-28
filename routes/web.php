@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactUsFormController;
+use App\Http\Controllers\PageController;
 use App\Http\Controllers\Admin\ArticleController;
 
 
@@ -16,7 +17,7 @@ use App\Http\Controllers\Admin\ArticleController;
 |
 */
 
-Route::get('/', function () {return view('app');});
+Route::get('/{name}', [PageController::class, 'index'])->name('home');
 
 // contactpagina
 Route::get('/contact', [ContactUsFormController::class, 'createForm'])->name('contact');
@@ -36,3 +37,5 @@ Route::get('/dashboard', [ArticleController::class, 'index']
 )->middleware(['auth'])->name('dashboard');
 
 require __DIR__.'/auth.php';
+
+
