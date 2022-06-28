@@ -12,6 +12,10 @@
                     You're logged in!
                 </div>
             </div>
+            hier
         </div>
     </div>
 </x-app-layout>
+
+@yield('topmenu')
+@yield('content')

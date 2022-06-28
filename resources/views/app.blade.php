@@ -24,7 +24,9 @@
                 <li><a href="/contact">Contact</a></li>
                 <li><a href="#">Berichten</a></li>
                 <li><a href="/login"><i class="fa-solid fa-user"></i></a></li>
+
             </ul>
         </nav>
     </header>
 
+@yield('content')
