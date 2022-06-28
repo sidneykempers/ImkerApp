@@ -16,15 +16,33 @@
     <header>
         <nav>
             <ul class="main_menu">
-                <li><a href="/">Home</a></li>
-                <li><a href="#">Basiscursus</a></li>
-                <li><a href="#">Voortgezet Imkeren</a></li>
-                <li><a href="#">Informatie</a></li>
-                <li><a href="#">Links</a></li>
+                <li><a href="/home">Home</a></li>
+                <li><a href="/basiscursus">Basiscursus</a></li>
+                <li><a href="/voortgezetimkeren">Voortgezet Imkeren</a></li>
+                <li><a href="/informatie">Informatie</a></li>
+                <li><a href="/links">Links</a></li>
                 <li><a href="/contact">Contact</a></li>
-                <li><a href="#">Berichten</a></li>
+                <li><a href="/berichten">Berichten</a></li
                 <li><a href="/login"><i class="fa-solid fa-user"></i></a></li>
             </ul>
         </nav>
     </header>
+    {{$pages->title}}
+    <br>
+    {{$pages->subtitle}}
+    <br><div class="stijl-text">
+    {{$pages->text}}
+    <br>
+      </div>
+    {{$pages->text2}}
+
+    <br>
+    {{$pages->banner_image_url}}
+    <br>
+    {{$pages->image_url1}}
+    <br>
+    {{$pages->image_url2}}
+
+
+</div>
 
