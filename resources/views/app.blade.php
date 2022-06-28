@@ -24,6 +24,7 @@
                 <li><a href="/contact">Contact</a></li>
                 <li><a href="/berichten">Berichten</a></li
                 <li><a href="/login"><i class="fa-solid fa-user"></i></a></li>
+
             </ul>
         </nav>
     </header>
@@ -46,3 +47,4 @@
 
 </div>
 
+@yield('content')
