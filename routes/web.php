@@ -4,6 +4,7 @@ use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ContactUsFormController;
 use App\Http\Controllers\PageController;
 use App\Http\Controllers\Admin\ArticleController;
+use App\Http\Controllers\Admin\AdminPageController;
 
 
 /*
@@ -17,7 +18,7 @@ use App\Http\Controllers\Admin\ArticleController;
 |
 */
 
-Route::get('/{name}', [PageController::class, 'index'])->name('home');
+Route::get('/pages/{name}', [PageController::class, 'index'])->name('home');
 
 // contactpagina
 Route::get('/contact', [ContactUsFormController::class, 'createForm'])->name('contact');
@@ -30,6 +31,14 @@ route::get('admin/articles/show/{id}', [ArticleController::class, 'show'])->name
 route::get('admin/articles/edit/{id}', [ArticleController::class, 'edit'])->name('article.edit');
 route::post('admin/articles/edit/{id}', [ArticleController::class, 'update'])->name('article.update');
 route::post('admin/articles/{id}', [ArticleController::class, 'delete'])->name('article.delete');
+
+route::get('admin/pages', [AdminPageController::class, 'index']);
+route::get('admin/pages/create', [AdminPageController::class, 'create'])->name('pages');
+route::post('admin/pages/create', [AdminPageController::class, 'store'])->name('pages.store');
+route::get('admin/pages/show/{id}', [AdminPageController::class, 'show'])->name('pages.show');
+route::get('admin/pages/edit/{id}', [AdminPageController::class, 'edit'])->name('pages.edit');
+route::post('admin/pages/edit/{id}', [AdminPageController::class, 'update'])->name('pages.update');
+route::post('admin/pages/{id}', [AdminPageController::class, 'delete'])->name('pages.delete');
 
 route::resource('admin/articles', App\Http\Controllers\Admin\ArticleController::class);
 
